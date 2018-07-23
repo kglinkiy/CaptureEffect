@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JobList>
+  <Job>
+    <Name>STA0-0023.lvbitx</Name>
+    <JobInfo>
+      <SessionId>RXxL7vx</SessionId>
+      <JobId>hkdS8Rb</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\s1qydunk.aa3\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\s1qydunk.aa3</BuildFolder>
+    <OutputPath>Builds\STA0-0023.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/23/2018 18:02:13</StartTime>
+  </Job>
+</JobList>
