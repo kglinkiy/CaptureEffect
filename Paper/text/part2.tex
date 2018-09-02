@@ -1,0 +1,160 @@
+\subsection{Организация гибридного доступа в сетях 802.11ax}\label{sluchdostup}
+
+Стандарт 802.11ax перемещает механизм принятия решений от станций к точке доступа, которая и определяет: какая станция будет передавать; когда, в каком ресурсном блоке, сколько данных должно передаваться и т.п.
+Чтобы принять правильное решение, точка доступа должна быть осведомлена о буферизованном трафике станций и об условиях в канале. 
+Один подход для организации передачи буферизованного трафика пользовательскими станциями "--- это использование случайного доступа OFDMA (СД) наряду с планировщиком ресурсов, работающим по заранее определённому алгоритму. Передачу данных, осуществляющуюся с помощью планировщика ресурсов будем называть детерминированным доступом (ДД). 
+Благодаря методу СД, точка доступа может быстро получить информацию о новых кадрах, буферизованных подключёнными к данной точке доступа станциями, ожидающих передачи в восходящих потоках к станции. В этом случае, чтобы организовать передачу данных с использованием OFDMA в течение интервала между биконами (бикон-интервала), точка доступа периодически отправляет триггер-кадры (ТК). Назовём периоды между триггер-кадрами триггер-интервалами. Такой процесс передачи данных показан на рис.~\ref{fig:periodicJESUS}.
+\begin{figure*}[t]
+	\scriptsize
+	\centering
+	\begin{scaletikzpicturetowidth}{0.85\textwidth}
+		\begin{tikzpicture}[scale = \tikzscale]
+		\draw [arrows={-triangle 45}] (0,1) -- (16,1);
+		\draw [arrows={-triangle 45}] (0,1) -- (0,6);
+		\node at (14.5,  0.5) {\textit{Время}};
+		\node at (1,  6) {\textit{Частота}};
+		\draw [line width=0.5mm] (1, 1) rectangle (2.2, 4.6);
+		\node [text width=1.5cm, align=center] at (1.6,  2.8) {\rotatebox{90}{Бикон}};
+		\draw (1.0,  0) -- (1.0,  1);
+		\draw (15.4,  0) -- (15.4,  1);
+		\draw [arrows={triangle 45-triangle 45}] (1.0,0) -- (15.4,0);
+		\node at (6.5,  0.2) {$BI$};
+		\draw [line width=0.5mm] (3.2, 1) rectangle (4.4, 4.6);
+		\node [text width=1.5cm, align=center] at (3.8,  2.8) {\rotatebox{90}{ТК 1}};
+		\draw [line width=0.5mm] (4.4, 1.0) rectangle (6.6, 1.6);
+		\draw [line width=0.5mm] (4.4, 1.6) rectangle (6.6, 2.2);
+		\draw [line width=0.5mm] (4.4, 2.2) rectangle (6.6, 2.8);
+		\draw [line width=0.5mm] (4.4, 2.8) rectangle (6.6, 3.4);
+		\draw [line width=0.5mm] (4.4, 3.4) rectangle (6.6, 4.0);
+		\draw [line width=0.5mm] (4.4, 4.0) rectangle (6.6, 4.6);
+		\node [text width=1.8cm, align=center] at (5.6, 1.25) {РБ 1};
+		\node [text width=1.8cm, align=center] at (5.6, 1.85) {РБ 2};
+		\node [text width=1.8cm, align=center] at (5.6, 2.45) {...};
+		\node [text width=1.8cm, align=center] at (5.6, 3.05) {РБ $F_1$};
+		\node [text width=1.8cm, align=center] at (5.6, 3.65) {...};
+		\node [text width=1.8cm, align=center] at (5.6, 4.25) {РБ $F_{max}$};
+		\draw [decorate,decoration={brace,amplitude=7pt,mirror,raise=1pt},yshift=0pt]
+		(6.6,1) -- (6.6,3.4) node [black,midway,xshift=0.6cm] {$RA$};
+		\draw [decorate,decoration={brace,amplitude=7pt,mirror,raise=1pt},yshift=0pt]
+		(6.6,3.4) -- (6.6,4.6) node [black,midway,xshift=0.6cm] {$DA$};
+		\draw (3.2,  0.5) -- (3.2,  1.0);
+		\draw (6.6,  0.5) -- (6.6,  1.0);
+		\draw [arrows={triangle 45-triangle 45}] (3.2,0.5) -- (6.6,0.5);
+		\node at (4.5,  0.75) {$L$};
+		\draw [arrows={triangle 45-triangle 45}] (2.2,1.5) -- (3.2,1.5);
+		\node at (2.7,  1.75) {$T_b$};
+		\node [text width=1.5cm, align=center] at (8.2, 2.5) {...};
+		\draw [line width=0.5mm] (8.8, 1) rectangle (10, 4.6);
+		\node [text width=1.5cm, align=center] at (9.4,  2.8) {\rotatebox{90}{ТК $Z$}};
+		\draw [line width=0.5mm] (10, 1.0) rectangle (12.3, 1.6);
+		\draw [line width=0.5mm] (10, 1.6) rectangle (12.3, 2.2);
+		\draw [line width=0.5mm] (10, 2.2) rectangle (12.3, 2.8);
+		\draw [line width=0.5mm] (10, 2.8) rectangle (12.3, 3.4);
+		\draw [line width=0.5mm] (10, 3.4) rectangle (12.3, 4.0);
+		\draw [line width=0.5mm] (10, 4.0) rectangle (12.3, 4.6);
+		\node [text width=1.8cm, align=center] at (11.2, 1.25) {РБ 1};
+		\node [text width=1.8cm, align=center] at (11.2, 1.85) {РБ 2};
+		\node [text width=1.8cm, align=center] at (11.2, 2.45) {...};
+		\node [text width=1.8cm, align=center] at (11.2, 3.05) {РБ $F_Z$};
+		\node [text width=1.8cm, align=center] at (11.2, 3.65) {...};
+		\node [text width=1.8cm, align=center] at (11.2, 4.25) {РБ $F_{max}$};
+		\draw [decorate,decoration={brace,amplitude=7pt,mirror,raise=1pt},yshift=0pt]
+		(12.3,1) -- (12.3,3.4) node [black,midway,xshift=0.6cm] {$RA$};
+		\draw [decorate,decoration={brace,amplitude=7pt,mirror,raise=1pt},yshift=0pt]
+		(12.3,3.4) -- (12.3,4.6) node [black,midway,xshift=0.6cm] {$DA$};
+		\draw [line width=0.5mm] (14.2, 1) rectangle (15.4, 4.6);
+		\node [text width=1.5cm, align=center] at (14.8,  2.8) {\rotatebox{90}{Бикон}};
+		\end{tikzpicture}
+	\end{scaletikzpicturetowidth}
+	\caption{\label{fig:periodicJESUS} Процесс передачи данных}
+\end{figure*}
+
+Заметим, что для передачи запросов полосы станции в сети IEEE 802.11ax могут использовать не только случайный доступ в OFDMA, но и стандартный метод случайного доступа EDCA, в те интервалы времени, когда точка доступа не использует частотное разделение канала. 
+Подобные интервалы возникают в тех ситуациях, когда ни одна станция в сети ещё не запросила ресурсы у точки доступа и нет необходимости выделения ресурсов в OFDMA для передачи. А значит, согласно стандарту она не рассылает триггер-кадры и не распределяет ресурсы между станциями, поскольку никакая из станций не показала необходимость в предоставлении ей некоторых ресурсов. В таком случае клиентские станции при появлении данных на передачу начинают соревноваться за доступ к каналу, используя метод доступа EDCA. Когда точка доступа успешно получает запрос полосы, то она начинает рассылать триггер-кадры и вся работа переходит в режим гибридного доступа, описанного выше. Также можно использовать случайный доступ, детерминированный и отводить некоторое время в слоте под передачу запросов полосы в EDCA. 
+
+Остановимся подробнее на вопросе объединения случайного и детерминированного доступа в сетях 802.11ax: гибридного доступа. С точки зрения станции можно выделить две фазы, показанные на рис.~\ref{fig:STAprocess}, в которых последняя может находиться: 
+
+\begin{itemize}
+\item[$\bullet$]
+фазу случайного доступа СД (в ней станция пытается конкурентно с другими станциями отправить запрос на полосу для дальнейшей передачи данных);
+\item[$\bullet$] 
+фазу детерминированного доступа ДД (в которую станция переходит при успешной передаче упомянутого запроса на полосу и которая полностью определяется планировщиком ресурсов).
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\begin{scaletikzpicturetowidth}{\textwidth}
+		\begin{tikzpicture}[scale = \tikzscale]
+		
+		\scriptsize
+		
+		\draw[draw = none,pattern=checkerboard light gray, pattern color=black, ] (5,1) rectangle (11,2);
+		
+		\draw [decorate,decoration={brace,amplitude=6pt,mirror,raise=4pt}]
+		(1,1) -- (5,1) node [black,midway,xshift=0cm,yshift=-0.34cm, below] {\textit{фаза доступа к каналу}};
+		
+		\draw[draw = none,pattern=horizontal lines light gray, pattern color=black, ] (4,1) rectangle (5,2);
+		
+		
+		\draw [arrows={-triangle 45}] (-0.5,1) -- (12,1);
+		\draw [arrows={-triangle 45}] (0.4,2.1) -- (0.4,1);
+		\draw [arrows={triangle 45-triangle 45}] (0,1.5) -- (1,1.5);
+		\draw [arrows={triangle 45-triangle 45}] (1.0,1.5) -- (2.0,1.5);
+		%\draw [arrows={triangle 45-triangle 45}] (2.0,1.5) -- (3.0,1.5);
+		\draw [arrows={triangle 45-triangle 45}] (3.0,1.5) -- (4.0,1.5);
+		\draw (0,1.5) -- (0,1);
+		\draw (1,1.5) -- (1,1);
+		\draw (2,1.5) -- (2,1);
+		\draw (3,1.5) -- (3,1);
+				
+		
+		\node at (0.45,  2.2) {\textit{поступление данных}};
+		\node at (0,  1.8) {$\emptyset$};
+		\node at (0.7,  1.8) {$b_0$};
+		\node at (1.5,  1.8) {$b_1$};
+		\node at (2.5,  1.4) {$...$};
+		\node at (3.5,  1.8) {$b_{n-1}$};
+		
+		\draw [arrows={triangle 45-triangle 45}] (4.0,1.5) -- (5.0,1.5);
+		\draw (4,1.5) -- (4,1);
+		\draw (5,1.5) -- (5,1);
+		\node at (4.5,  1.8) {$b_n < 0$};
+		
+		\draw [arrows={triangle 45-triangle 45}] (5,1.5) -- (6,1.5);
+		\draw [arrows={triangle 45-triangle 45}] (6,1.5) -- (7,1.5);
+		\draw [arrows={triangle 45-triangle 45}] (7.0,1.5) -- (8.0,1.5);
+		%\draw [arrows={triangle 45-triangle 45}] (2.0,1.5) -- (3.0,1.5);
+		\draw [arrows={triangle 45-triangle 45}] (9.0,1.5) -- (10.0,1.5);
+		\draw [arrows={triangle 45-triangle 45}] (10.0,1.5) -- (11.0,1.5);
+		
+		\draw (6,1.5) -- (6,1);
+		\draw (7,1.5) -- (7,1);
+		\draw (8,1.5) -- (8,1);
+		\draw (9,1.5) -- (9,1);
+		\draw (10,1.5) -- (10,1);
+		\draw (11,1.5) -- (11,1);
+		
+		\node at (8.5,  1.4) {$...$};
+		\node at (10.5,  1.8) {\textit{конец}};
+		
+		\draw [decorate,decoration={brace,amplitude=6pt,mirror,raise=4pt}]
+		(5,1) -- (11,1) node [black,midway,xshift=0cm,yshift=-0.34cm, below] {\textit{фаза передачи данных}};
+		
+		%\node at (14,  1.8) {$b(t)$};
+		\node at (11.7,  1.23) {\textit{время}};
+		\end{tikzpicture}
+	\end{scaletikzpicturetowidth}
+	\caption{\label{fig:STAprocess} Передача данных с точки зрения станции (здесь за $b_i$ обозначен счётчик отсрочки, используемый в фазе случайного доступа)}
+\end{figure}
+
+\vspace{-\baselineskip}
+Также стоит отметить, что есть два типа ресурсных блоков: РБ, используемый для СД и РБ, используемый для ДД.
+
+Пусть сеть Wi-Fi состоит из точки доступа, к которой подключена группа из $N$ станций, которым время от времени приходят конечные потоки данных на передачу для точки доступа.  Данный сценарий изображён на рис.~\ref{fig:scenario}. Будем считать, что при получении станцией потока данных, точка доступа достаточно быстро узнает об этом. Т.е. в данной статье не затрагиваются вопросы, касающиеся случайного доступа при передаче данных.  Чтобы минимизировать суммарное время передачи данных в детерминированном доступе нужно решать задачу наилучшего разбиения канала на РБ, а также их назначения передающим станциям. 
+\begin{figure}[!t]
+\center
+\includegraphics[width = 0.4\textwidth]{NetworkScenario}
+\caption{\label{fig:scenario} Сетевой сценарий}
+\end{figure}
+
+В данной работе мы рассматриваем следующую проблему: \textit{разработать планировщик ресурсов для передачи данных в восходящих потоках, который минимизирует среднюю задержку. }
