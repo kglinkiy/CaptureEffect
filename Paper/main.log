@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.28)  3 SEP 2018 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.28)  3 SEP 2018 16:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -1666,6 +1666,9 @@ LaTeX Warning: Label `ris:image' multiply defined.
 
 LaTeX Warning: Label `ris:image' multiply defined.
 
+
+LaTeX Warning: Label `ris:image' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1822,30 +1825,12 @@ Package pdftex.def Info: capture_effect_scenario_1.png  used on input line 81.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htbp') on input line 88.
 
+<capture_effect_scenario_2.png, id=22, 325.81725pt x 144.54pt>
+File: capture_effect_scenario_2.png Graphic file (type png)
+<use capture_effect_scenario_2.png>
+Package pdftex.def Info: capture_effect_scenario_2.png  used on input line 89.
+(pdftex.def)             Requested size: 325.81644pt x 144.53963pt.
 
-LaTeX Warning: File `capture_effect_scenario_2.png' not found on input line 89.
-
-
-
-! Package pdftex.def Error: File `capture_effect_scenario_2.png' not found: usi
-ng draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 ...udegraphics{capture_effect_scenario_2.png}
-                                                  }
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 89.
-
-
-("C:\Users\kglin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.f
-d"
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
 Underfull \vbox (badness 1902) has occurred while \output is active []
 
  [2 <./capture_effect_scenario_1.png>]
@@ -1853,7 +1838,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
-[3] [4]
+[3 <./capture_effect_scenario_2.png>] [4]
 <graph_frr.png, id=34, 454.69875pt x 255.95625pt>
 File: graph_frr.png Graphic file (type png)
 <use graph_frr.png>
@@ -1910,30 +1895,29 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32974 strings out of 492973
- 686649 string characters out of 3126692
- 713961 words of memory out of 3000000
- 36244 multiletter control sequences out of 15000+200000
- 551744 words of font info for 79 fonts, out of 3000000 for 9000
+ 32957 strings out of 492973
+ 686114 string characters out of 3126692
+ 710961 words of memory out of 3000000
+ 36234 multiletter control sequences out of 15000+200000
+ 551434 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,77p,2611b,640s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\la
-tt1000.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\d
-pi600\lasl0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\
-lh-t2a\dpi600\labx1200.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\lh\lh-t2a\dpi600\labx1000.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\lh\lh-t2a\dpi600\labx0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0900.pk> <C:\Users\kglin\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\kglin\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk><C:/Users/kgl
-in/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi9.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on main.pdf (7 pages, 213352 bytes).
+sl0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\d
+pi600\labx1200.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\
+lh-t2a\dpi600\labx1000.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\lh\lh-t2a\dpi600\labx0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\lh\lh-t2a\dpi600\larm0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\kglin\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk><C:/Users/kglin/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
+s/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb>
+Output written on main.pdf (7 pages, 211537 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
+ 413 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 52 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
