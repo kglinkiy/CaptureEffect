@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{cisco2017}
+Cisco.
+\newblock Cisco visual networking index: Global mobile data traffic forecast
+  update, 2016 – 2021, 2016.
+
+\bibitem{Kureev2017}
+Evgeny Khorov, Aleksei Kureev, Andrey Lyakhov, and Ilya Levitsky.
+\newblock Testbed to study the capture effect: Can we rely on this effect in
+  modern wi-fi networks.
+\newblock {\em In proc. of IEEE International Black Sea Conference on
+  Communications and Networking, Batumi, Georgia, 2018}, 2017.
+
+\bibitem{Patras2012}
+Paul Patras, Hanghang Qi, and David Malone.
+\newblock Exploiting the capture effect to improve {WLAN} throughput.
+\newblock In {\em 2012 {IEEE} International Symposium on a World of Wireless,
+  Mobile and Multimedia Networks ({WoWMoM})}. {IEEE}, jun 2012.
+
+\bibitem{Lee2007}
+Jeongkeun Lee, Wonho Kim, Sung-Ju Lee, Daehyung Jo, Jiho Ryu, Taekyoung Kwon,
+  and Yanghee Choi.
+\newblock An experimental study on the capture effect in 802.11a networks.
+\newblock In {\em Proceedings of the the second {ACM} international workshop on
+  Wireless network testbeds, experimental evaluation and characterization}.
+  {ACM} Press, 2007.
+
+\bibitem{Boer1997}
+Jan Boer.
+\newblock Wireless lan with enhanced capture provision, 1997.
+
+\bibitem{Bejerano2015}
+Yigal Bejerano, Hyoung-Gyu Choi, and Seung-Jae Han.
+\newblock Fairness analysis of physical layer capture effects in {IEEE} 802.11
+  networks.
+\newblock In {\em 2015 13th International Symposium on Modeling and
+  Optimization in Mobile, Ad Hoc, and Wireless Networks ({WiOpt})}. {IEEE}, may
+  2015.
+
+\end{thebibliography}

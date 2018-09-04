@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.28)  4 SEP 2018 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.28)  4 SEP 2018 16:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -1654,7 +1654,7 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \c@@todonotes@numberoftodonotes=\count351
 ) (main.aux
-LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 10.
 
 ("C:\Users\kglin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd
 "
@@ -1678,20 +1678,20 @@ LaTeX Warning: Label `ris:image' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 ("C:\Users\kglin\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -1803,141 +1803,122 @@ Package caption Info: End \AtBeginDocument code.
 \Hy@linkcounter=\count358
  ABD: EveryShipout initializing macros<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx
 .cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
 
 ("C:\Users\kglin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 ("C:\Users\kglin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )<<ot1tt.cmap>>
-Overfull \hbox (4.18213pt too wide) in paragraph at lines 68--69
+Overfull \hbox (4.18213pt too wide) in paragraph at lines 69--70
 \T2A/cmr/m/n/9 несколь-ких кад-ров. Со-глас-но дей-ству-ю-ще-му стан-дар-ту при
 -ем-ник дол-
  []
 
+
+LaTeX Warning: Citation `cisco2017' on page 1 undefined on input line 75.
+
+
+LaTeX Warning: Citation `Patras2012' on page 1 undefined on input line 75.
+
 [1
 
 {C:/Users/kglin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 80.
+               Default added (so using `htbp') on input line 81.
 
-<capture_effect_init.png, id=21, 325.81725pt x 144.54pt>
+<capture_effect_init.png, id=20, 325.81725pt x 144.54pt>
 File: capture_effect_init.png Graphic file (type png)
 <use capture_effect_init.png>
-Package pdftex.def Info: capture_effect_init.png  used on input line 81.
+Package pdftex.def Info: capture_effect_init.png  used on input line 82.
 (pdftex.def)             Requested size: 162.90822pt x 72.2698pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 88.
+               Default added (so using `htbp') on input line 89.
 
-<capture_effect_scenario_1.png, id=22, 325.81725pt x 144.54pt>
+<capture_effect_scenario_1.png, id=21, 325.81725pt x 144.54pt>
 File: capture_effect_scenario_1.png Graphic file (type png)
 <use capture_effect_scenario_1.png>
-Package pdftex.def Info: capture_effect_scenario_1.png  used on input line 89.
+Package pdftex.def Info: capture_effect_scenario_1.png  used on input line 90.
 (pdftex.def)             Requested size: 162.90822pt x 72.2698pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 93.
+               Default added (so using `htbp') on input line 94.
 
-<capture_effect_scenario_2.png, id=23, 325.81725pt x 144.54pt>
+<capture_effect_scenario_2.png, id=22, 325.81725pt x 144.54pt>
 File: capture_effect_scenario_2.png Graphic file (type png)
 <use capture_effect_scenario_2.png>
-Package pdftex.def Info: capture_effect_scenario_2.png  used on input line 94.
+Package pdftex.def Info: capture_effect_scenario_2.png  used on input line 95.
 (pdftex.def)             Requested size: 162.90822pt x 72.2698pt.
 [2 <./capture_effect_init.png>] [3 <./capture_effect_scenario_1.png> <./capture
 _effect_scenario_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-<scheme.png, id=36, 614.295pt x 255.95625pt>
+<scheme.png, id=35, 614.295pt x 255.95625pt>
 File: scheme.png Graphic file (type png)
 <use scheme.png>
-Package pdftex.def Info: scheme.png  used on input line 138.
+Package pdftex.def Info: scheme.png  used on input line 139.
 (pdftex.def)             Requested size: 307.14674pt x 127.9778pt.
-[4]
-<frr_0.png, id=41, 455.301pt x 255.95625pt>
+[4] [5 <./scheme.png>]
+<frr_0.png, id=45, 455.301pt x 255.95625pt>
 File: frr_0.png Graphic file (type png)
 <use frr_0.png>
-Package pdftex.def Info: frr_0.png  used on input line 153.
+Package pdftex.def Info: frr_0.png  used on input line 154.
 (pdftex.def)             Requested size: 227.64993pt x 127.9778pt.
-<frr_200.png, id=42, 455.301pt x 255.95625pt>
+<frr_200.png, id=46, 455.301pt x 255.95625pt>
 File: frr_200.png Graphic file (type png)
 <use frr_200.png>
-Package pdftex.def Info: frr_200.png  used on input line 154.
+Package pdftex.def Info: frr_200.png  used on input line 155.
 (pdftex.def)             Requested size: 227.64993pt x 127.9778pt.
-<MCS_difference.png, id=43, 454.69875pt x 255.95625pt>
+<MCS_difference.png, id=47, 454.69875pt x 255.95625pt>
 File: MCS_difference.png Graphic file (type png)
 <use MCS_difference.png>
-Package pdftex.def Info: MCS_difference.png  used on input line 162.
+Package pdftex.def Info: MCS_difference.png  used on input line 163.
 (pdftex.def)             Requested size: 227.34882pt x 127.9778pt.
- [5 <./scheme.png>] [6 <./frr_0.png (PNG copy)> <./frr_200.png (PNG copy)>]
-Overfull \hbox (20.2904pt too wide) in paragraph at lines 175--188
-[]\T2A/cmr/m/n/10 1.[Электронный ре-сурс] URL:https://www.wi-fi.org/news-events
-/newsroom/wi-
- []
+ [6 <./frr_0.png> <./frr_200.png>] (main.bbl [7 <./MCS_difference.png>]) [8] (m
+ain.aux)
 
+LaTeX Warning: There were undefined references.
 
-Overfull \hbox (16.62097pt too wide) in paragraph at lines 175--188
-\T2A/cmr/m/n/10 Wireless network testbeds, experimental evaluation and characte
-rization (WinTECH
- []
-
-
-Overfull \hbox (0.72208pt too wide) in paragraph at lines 175--188
-\T2A/cmr/m/n/10 3. Xiaohu Ge, Yaoting Zhu and Rong Weijiang, "Throughput analys
-is considering
- []
-
-
-Overfull \hbox (2.51111pt too wide) in paragraph at lines 175--188
-\T2A/cmr/m/n/10 WLAN throughput,"2012 IEEE International Symposium on a World o
-f Wireless,
- []
-
-
-Overfull \hbox (9.39941pt too wide) in paragraph at lines 175--188
-\T2A/cmr/m/n/10 Networks. In proc. of IEEE International Black Sea Conference o
-n Communications
- []
-
-[7 <./MCS_difference.png (PNG copy)>] [8] (main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32972 strings out of 492973
- 686371 string characters out of 3126692
- 712957 words of memory out of 3000000
- 36246 multiletter control sequences out of 15000+200000
- 551434 words of font info for 78 fonts, out of 3000000 for 9000
+ 32976 strings out of 492973
+ 686444 string characters out of 3126692
+ 714827 words of memory out of 3000000
+ 36245 multiletter control sequences out of 15000+200000
+ 552308 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,77p,2879b,642s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,77p,2939b,642s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\la
-sl0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\d
-pi600\labx1200.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\
-lh-t2a\dpi600\labx1000.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\lh\lh-t2a\dpi600\labx0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\lh\lh-t2a\dpi600\larm0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\kglin\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk><C:/Users/kglin/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
-s/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.
-pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi9.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on main.pdf (8 pages, 279005 bytes).
+ti0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\d
+pi600\lasl0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\
+lh-t2a\dpi600\labx1200.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\lh\lh-t2a\dpi600\labx1000.pk> <C:\Users\kglin\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\lh\lh-t2a\dpi600\labx0900.pk> <C:\Users\kglin\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0900.pk> <C:\Users\kglin\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\kglin\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk><C:/Users/kgl
+in/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi6.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb><C:/Users/kglin/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/kglin/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on main.pdf (8 pages, 286041 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
+ 524 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
